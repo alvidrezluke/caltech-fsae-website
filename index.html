@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<body>
+<nav>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="logocontainer"><img class="logo" src="assets/fsae_logo_1-2.png"></a>
+        <a href="javascript:void(0);" class="icon" id="navbarmenu" onclick="myFunction()">&#9776;</a>
+        <a class="right" href="#news">Contact</a>
+        <a class="right" href="#contact">Team</a>
+
+        <a class="right" href="#about">Sponsors</a>
+
+    </div>
+</nav>
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+            document.getElementById("navbarmenu").innerHTML = '&#x2715';
+
+        } else {
+            x.className = "topnav";
+            document.getElementById("navbarmenu").innerHTML = '&#9776';
+
+        }
+    }
+</script>
+</body>
+</html>
