@@ -12,7 +12,7 @@ html {
     font-family: 'Poppins', serif;
 }
 .nav-active {
-    background-color:blue;
+    background-color:rgb(92, 225, 230, .9);
     box-shadow: 5px -1px 12px -5px grey;
 }
 
@@ -93,72 +93,109 @@ position:absolute;
     z-index: -1;
 }
 .landingorange {
-    width:400px;
-    height:150px;
+    width:50%;
+    height:250px;
     margin-bottom:auto;
     margin-top:auto;
     display:flex;
     text-align: center;
     justify-content: center;
-    background-color: rgb(255, 145, 77, .8);
+    background-color: rgb(255, 145, 77, .6);
 }
 .landingwhite {
-    width:300px;
+    width:80%;
     height:100px;
-margin-top:10px;
+margin-top:40px;
     background-color: rgb(255,255,255, .8);
 }
 .landingtext {
 margin-top:10px;
+    padding:20px;
+    background-color: rgb(255,255,255, .8);
+
 }
 .summarycontainer {
     width:100%;
-    height:500px;
+    height:450px;
     display:flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
 position:relative;
+}
+.top {
+    margin-top:50px;
+}
+.bottom {
+    margin-top:5%;
+    margin-bottom: 100px;
+}
+.summaryheader {
+    color:black;
+    padding:20px;
+    background-color:white;
+    border:1px solid rgb(92, 225, 230, .9);
+    width:200px;
+
+    text-align: center;
+margin:30px auto;
+border-radius:20px;
+
 }
 .summarycontent {
     background-color: rgb(255,255,255, .8);
-    width:700px;
-    height:400px;
+    width:70%;
+    height:350px;
     display:flex;
     flex-direction:row;
+    margin-left:auto;
+    margin-right:auto;
     position:relative;
+
 }
 .summarytext {
-    border:1px solid blue;
     padding:30px;
 }
 .summaryimage {
     width:400px;
+    padding:30px;
 }
 .generalsummarycontainer {
     position:relative;
-    margin:5%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
 }
 .summaryblue {
 
-    width:80%;
-    height:200px;
-    background-color: blue;
+    width:100%;
+    height:350px;
+    background-color:rgb(92, 225, 230, .7);
     position:absolute;
-    bottom:0;
-    left:10%;
+    bottom:-30%;
+    left:0%;
     z-index:-1;
 
 
 }
 .summaryorange {
-    width:80%;
-    height:200px;
-    background-color: orange;
+    width:100%;
+    height:350px;
+    background-color: rgb(255, 145, 77, .7);
     position:absolute;
     top:0;
-    left:10%;
+    left:0%;
     z-index:-1;
 
+}
+.summarywhite {
+    height:1000px;
+    width:90%;
+    background-color: rgb(255,255,255, .5);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:-2;
 }
 .reverse {
     flex-direction:row-reverse !important;
@@ -175,15 +212,20 @@ position:relative;
 .teamprofilecard {
     width:20%;
     position:relative;
+    margin-top:auto;
+    margin-bottom:auto;
+
 }
 .teamcontainer {
     text-align: center;
+    display:flex;
+    justify-content: space-around;
+    flex-direction:column;
 }
 .teamheader {
     color:white;
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:15px;
 }
 .profileimage {
     width:100%;
@@ -200,12 +242,15 @@ position:relative;
 font-size:20px;
 position:absolute;
     bottom:0;
-    right:0;
+    right:10px;
 }
 .photocontainer {
     display:flex;
     flex-direction:column;
     text-align: center;
+    margin-top:50px;
+    margin-left:30px;
+    margin-right:30px;
 }
 .photoheader {
     color:white;
@@ -214,6 +259,11 @@ position:absolute;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    overflow:scroll;
+margin-left:30px;
+}
+.photoimage {
+    margin-left:30px;
 }
 .sponsorcontainer {
 display:flex;
