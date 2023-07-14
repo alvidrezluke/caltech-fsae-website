@@ -11,16 +11,23 @@ html {
     background-color:black;
     font-family: 'Poppins', serif;
 }
+.nav-active {
+    background-color:blue;
+    box-shadow: 5px -1px 12px -5px grey;
+}
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: none;
     overflow: hidden;
     padding-left:10%;
     padding-right:10%;
 padding-bottom:0px;
     margin-bottom:0px;
     position:sticky;
+    top:0;
+    z-index:10000000;
+    transition: 0.2s ease-in-out;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -298,7 +305,7 @@ footer {
 @media screen and (max-width: 600px) {
 
     .topnav.responsive {
-        position: relative;
+        position: sticky;
 
 
     }
