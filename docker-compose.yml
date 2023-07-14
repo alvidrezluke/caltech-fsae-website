@@ -1,0 +1,18 @@
+version: "3"
+
+networks:
+  proxy:
+    external: true
+
+services:
+  httpd:
+    image: httpd:latest
+    networks:
+      - proxy
+    volumes:
+      - ${PROJECT_PATH}:/usr/local/apache2/htdocs/
+    labels:
+      - "traefik.http.routers.whoami.rule=Host(`fsae.caltech.edu`)"
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.entrypoints=websecure"
+      - "traefik.http.routers.whoami.tls.certresolver=myresolver"
