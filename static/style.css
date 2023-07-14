@@ -237,7 +237,7 @@ border-radius:20px;
     color:white;
 }
 .viewall {
-    color:orange;
+    color: rgb(255, 145, 77);
 
 font-size:20px;
 position:absolute;
@@ -248,12 +248,13 @@ position:absolute;
     display:flex;
     flex-direction:column;
     text-align: center;
-    margin-top:50px;
     margin-left:30px;
     margin-right:30px;
 }
 .photoheader {
     color:white;
+    margin-bottom:30px;
+    margin-top:30px;
 }
 .photocontent {
     display:flex;
@@ -271,6 +272,9 @@ display:flex;
     text-align: center;
     position:relative;
     margin-bottom:50px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
 }
 .sponsorcontent {
     display:grid;
@@ -281,31 +285,33 @@ display:flex;
     justify-content: center;
     column-gap: 20px;
     row-gap:20px;
+    width:100%;
 }
 .sponsorheader {
     color:white;
+    margin-bottom:30px;
+    margin-top:30px;
 }
 .sponsorimage {
-    width:200px;
-    height:100px;
+height:100%;    height:100px;
 }
 .sponsorblue {
     z-index:-1;
     position:absolute;
-    height:100px;
-    width:300px;
-    bottom:-20%;
-    left:30%;
-    background-color: blue;
+    height:300px;
+    width:700px;
+    bottom:-5%;
+    left:-5%;
+    background-color:rgb(92, 225, 230, .8);
 }
 .sponsororange {
     z-index:-1;
     position:absolute;
-    height:100px;
-    width:300px;
-    bottom:-20%;
-    left:70%;
-    background-color: orange;
+    height:500px;
+    width:400px;
+    bottom:20%;
+    right:-10%;
+    background-color: rgb(255, 145, 77, .6);
 }
 footer {
 
@@ -313,7 +319,8 @@ footer {
     display:flex;
     justify-content: center;
     text-align: center;
-    background-color:white;
+    background-color: rgb(255, 145, 77, .6);
+
 
 }
 .footercontainer {
@@ -321,7 +328,8 @@ footer {
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    background-color:white;
+    background-color: rgb(255, 145, 77, .6);
+    background-color:rgb(92, 225, 230, .8);
 
 }
 
