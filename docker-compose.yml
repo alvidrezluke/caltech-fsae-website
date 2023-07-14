@@ -10,7 +10,7 @@ services:
     networks:
       - proxy
     volumes:
-      - ./static/:/usr/local/apache2/htdocs/
+      - ${PROJECT_PATH}:/usr/local/apache2/htdocs/
     labels:
       - "traefik.http.routers.whoami.rule=Host(`fsae.caltech.edu`)"
       - "traefik.enable=true"
