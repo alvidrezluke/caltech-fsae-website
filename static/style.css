@@ -382,6 +382,28 @@ width:auto;
 
 
     }
+    .summaryimage {
+        width:100%;
+    }
+    .summarycontent {
+        flex-direction:column;
+    }
+    .reverse {
+        flex-direction: column-reverse !important;
+    }
+    .teamcontent {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height:inherit;
+    }
+    .teamprofilecard {
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .sponsorblue {
+        width:80%;
+    }
 
 
 }
