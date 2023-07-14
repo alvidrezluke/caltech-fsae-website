@@ -11,9 +11,10 @@ html {
     background-color:black;
     font-family: 'Poppins', serif;
 }
+
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: rgb(92, 225, 230, .8);
+    background-color: none;
     overflow: hidden;
     padding-left:10%;
     padding-right:10%;
@@ -156,7 +157,7 @@ position:relative;
     flex-direction:row-reverse !important;
 
 }
-.teamcontainer {
+.teamcontent {
     height:400px;
     width:100%;
     display:flex;
@@ -167,6 +168,15 @@ position:relative;
 .teamprofilecard {
     width:20%;
     position:relative;
+}
+.teamcontainer {
+    text-align: center;
+}
+.teamheader {
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:15px;
 }
 .profileimage {
     width:100%;
@@ -185,6 +195,79 @@ position:absolute;
     bottom:0;
     right:0;
 }
+.photocontainer {
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+}
+.photoheader {
+    color:white;
+}
+.photocontent {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.sponsorcontainer {
+display:flex;
+    flex-direction: column;
+    text-align: center;
+    position:relative;
+    margin-bottom:50px;
+}
+.sponsorcontent {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap:20px;
+}
+.sponsorheader {
+    color:white;
+}
+.sponsorimage {
+    width:200px;
+    height:100px;
+}
+.sponsorblue {
+    z-index:-1;
+    position:absolute;
+    height:100px;
+    width:300px;
+    bottom:-20%;
+    left:30%;
+    background-color: blue;
+}
+.sponsororange {
+    z-index:-1;
+    position:absolute;
+    height:100px;
+    width:300px;
+    bottom:-20%;
+    left:70%;
+    background-color: orange;
+}
+footer {
+
+    padding: 20px 0;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background-color:white;
+
+}
+.footercontainer {
+    margin: auto 0;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:white;
+
+}
+
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
