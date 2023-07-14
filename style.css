@@ -109,7 +109,7 @@ margin-top:10px;
     display:flex;
     justify-content: center;
     text-align: center;
-
+position:relative;
 }
 .summarycontent {
     background-color: rgb(255,255,255, .8);
@@ -158,16 +158,44 @@ margin-top:10px;
 }
 .teamcontainer {
     height:400px;
+    width:100%;
     display:flex;
     position:relative;
+    flex-direction:row;
+    justify-content: space-around;
 }
+.teamprofilecard {
+    width:20%;
+    position:relative;
+}
+.profileimage {
+    width:100%;
+}
+.profilename {
+    color:white;
+}
+.profiledescription {
+    color:white;
+}
+.viewall {
+    color:orange;
+
+font-size:20px;
+position:absolute;
+    bottom:0;
+    right:0;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+    .topnav {
+        padding-left:0%;
+        padding-right:0%;
+    }
     .logocontainer {
-        float: none;
         display: block;
-position:relative;
-        margin-left:-10%;
+        position:relative;
+        left:0;
     }
 
     .right {
@@ -178,7 +206,7 @@ position:relative;
     .topnav a.icon {
         float: right;
         display: block;
-        padding-bottom:13px;
+        padding-bottom:15px;
 
     }
 }
@@ -195,11 +223,12 @@ position:relative;
         float: none;
         display: block;
         text-align: left;
-        width:80%;
+        width:100%;
+
     }
     .topnav.responsive a.icon {
         position: absolute;
-        right: 10%;
+        right: 0%;
         top: 0;
 width:auto;
 
