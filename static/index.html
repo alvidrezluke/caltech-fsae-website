@@ -7,8 +7,8 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 
 <body>
-<nav>
-    <div class="topnav" id="myTopnav">
+
+    <nav class="topnav" id="myTopnav">
         <a href="#home" class="logocontainer"><img class="logo" src="assets/fsae_logo_1-2.png"></a>
         <a href="javascript:void(0);" class="icon" id="navbarmenu" onclick="myFunction()">&#9776;</a>
         <a class="right" href="#news">Contact</a>
@@ -16,53 +16,109 @@
 
         <a class="right" href="#about">Sponsors</a>
 
-    </div>
-</nav>
+    </nav>
+
 <div class="landingcontainer">
-<img class="landingimage" src="assets/Minions_characters.png">
+<img class="landingimage" src="assets/car.png">
     <div class="landingorange">
         <div class="landingwhite">
-            <h2 class="landingtext">Lorem ipsum loquitor</h2>
+            <h2 class="landingtext">Caltech FSAE Racing Team</h2>
         </div>
     </div>
 </div>
-<div class="summarycontainer">
-    <div class="summarycontent">
-        <div class="summarytext">
+    <div class="generalsummarycontainer">
+        <div class="summarycontainer top">
+            <div class="summaryheader"><h2>Year Review</h2></div>
+            <div class="summarycontent">
+                <div class="summarytext">
+                    <h2>Year Review</h2>
+                    <p>This has been a great year with the team! Lorem ipsum loquitor Lorem ipsum loquitorLorem ipsum
+                        loquitor</p>
+                </div>
+                <img src="assets/Minions_characters.png" class="summaryimage">
+            </div>
+            <div class="summaryblue"></div>
 
         </div>
-        <div class="summaryimage"></div>
-    </div>
-    <div class="summaryblue"></div>
-</div>
-<div class="summarycontainer">
-    <div class="summarycontent">
-        <div class="summarytext">
+
+        <div class="summarywhite"></div>
+        <div class="summarycontainer bottom">
+            <div class="summaryheader"><h2>Current Projects</h2></div>
+
+            <div class="summarycontent reverse">
+                <div class="summarytext">
+                    <h2>What We're Working On</h2>
+                    <p>This has been a great year with the team! Lorem ipsum loquitor Lorem ipsum loquitorLorem ipsum
+                        loquitor</p>
+                </div>
+                <img src="assets/Minions_characters.png" class="summaryimage">
+            </div>
+            <div class="summaryorange"></div>
 
         </div>
-        <div class="summaryimage"></div>
     </div>
-    <div class="summaryorange"></div>
-</div>
+
 <div class="teamcontainer">
-    <div class="teamprofilecard">
-
+    <div class="teamheader"><h2>Team Profiles</h2></div>
+    <div class="teamcontent">
+        <div class="teamprofilecard">
+            <h4 class="profilename">Bob</h4>
+            <img class="profileimage" src="assets/bob.jpg">
+            <p class="profiledescription">Lorem ipsum loquitor</p>
+        </div>
+        <div class="teamprofilecard">
+            <h4 class="profilename">Bob</h4>
+            <img class="profileimage" src="assets/bob.jpg">
+            <p class="profiledescription">Lorem ipsum loquitor</p>
+        </div>
+        <div class="teamprofilecard">
+            <h4 class="profilename">Bob</h4>
+            <img class="profileimage" src="assets/bob.jpg">
+            <p class="profiledescription">Lorem ipsum loquitor</p>
+        </div>
+        <div class="viewall"><p>View All >></p></div>
     </div>
-    <div class="viewall">View All</div>
-</div>
-<div class="photocontainer">
 
+</div>
+
+<div class="photocontainer">
+<div class="photoheader"><h2>Photos</h2></div>
+    <div class="photocontent">
+        <img class="photoimage" src="assets/bob.jpg">
+        <img class="photoimage" src="assets/bob.jpg">
+        <img class="photoimage" src="assets/bob.jpg">
+        <img class="photoimage" src="assets/bob.jpg">
+        <img class="photoimage" src="assets/bob.jpg">
+        <img class="photoimage" src="assets/bob.jpg">
+    </div>
 </div>
 <div class="modelcontainer">
-
+<!-- PUT STUFF HERE -->
 </div>
-<div class="sponsorcontainer"></div>
-<div class="footercontainer"></div>
+<div class="sponsorcontainer">
+    <div class="sponsorheader"><h2>Sponsors</h2></div>
+    <div class="sponsorcontent">
+        <img class="sponsorimage" src="assets/bob.jpg">
+        <img class="sponsorimage" src="assets/bob.jpg">
+        <img class="sponsorimage" src="assets/bob.jpg">
+        <img class="sponsorimage" src="assets/bob.jpg">
+        <img class="sponsorimage" src="assets/bob.jpg">
+        <img class="sponsorimage" src="assets/bob.jpg">
+    </div>
+    <div class="sponsorblue"></div>
+    <div class="sponsororange"></div>
+</div>
+    <footer class="footer">
+        <div class="footercontainer">
+            <div class="footer-links"><a href="jobs.php">Careers</a> <a href="jobs.php">Careers</a></div>
+            <p>&copy; 2023 CaltechFSAE. All rights reserved.</p>
+        </div>
+    </footer>
 <script>
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
     function myFunction() {
         var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
+        if (x.className === "topnav nav-active" || x.className === "topnav") {
             x.className += " responsive";
             document.getElementById("navbarmenu").innerHTML = '&#x2715';
 
@@ -72,6 +128,14 @@
 
         }
     }
+    const navbar = document.getElementById('myTopnav');
+    window.onscroll = () => {
+        if (window.scrollY > 300) {
+            navbar.classList.add('nav-active');
+        } else {
+            navbar.classList.remove('nav-active');
+        }
+    };
 </script>
 </body>
 </html>
