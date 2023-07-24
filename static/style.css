@@ -263,7 +263,7 @@ border-radius:20px;
     right:-10%;
     background-color: rgb(255, 145, 77, .6);
 }
-footer {
+
 
     padding: 20px 0;
     display:flex;
@@ -279,36 +279,4 @@ footer {
     /*background-color: rgb(255, 145, 77, .6);
     background-color:rgb(92, 225, 230, .8);*/
     color: white;
-}
-
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-
-    .summaryimage {
-        width:100%;
-    }
-    .summarycontent {
-        flex-direction:column;
-    }
-    .reverse {
-        flex-direction: column-reverse !important;
-    }
-    .teamcontent {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        height:inherit;
-    }
-    .teamprofilecard {
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .sponsorblue {
-        width:80%;
-    }
-
-
 }

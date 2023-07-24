@@ -1,0 +1,81 @@
+.bronze {
+    color:saddlebrown;
+}
+.gold {
+    color:gold;
+}
+.iron {
+    color:grey;
+}
+
+.sponsorcontainer {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    position:relative;
+    margin-bottom:50px;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+
+}
+.sponsorcontent {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    justify-content: center;
+    column-gap: 100px;
+    row-gap:100px;
+    width:100%;
+}
+.sponsorheader {
+    color:white;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+.sponsorimage {
+    width:200px;
+    height:100px;
+    background-color: rgb(255,255,255);
+    border-radius:20px;
+    padding:10px;
+}
+.sponsorblue {
+    z-index:-1;
+    position:absolute;
+    height:300px;
+    width:700px;
+    bottom:-5%;
+    left:-5%;
+    background-color:rgb(92, 225, 230, .8);
+}
+.sponsororange {
+    z-index:-1;
+    position:absolute;
+    height:500px;
+    width:400px;
+    bottom:20%;
+    right:-10%;
+    background-color: rgb(255, 145, 77, .6);
+}
+@media screen and (max-width: 600px) {
+    .sponsorblue {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 975px) {
+    .sponsorcontent {
+        grid-template-columns: auto auto;
+
+    }
+}
+@media screen and (max-width: 750px) {
+    .sponsorcontent {
+        grid-template-columns: auto;
+
+    }
+    .sponsorimage {
+width:100%;
+    }}
