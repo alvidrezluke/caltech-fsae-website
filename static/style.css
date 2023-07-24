@@ -6,6 +6,13 @@
     padding:0;
 
 }
+
+:root {
+    --blue: 92, 255, 230;
+    --orange: 255, 145, 77;
+    --white: 255, 255, 255;
+    --black: 0, 0, 0;
+}
 html {
     background-color:black;
     font-family: 'Poppins', serif;
@@ -26,6 +33,7 @@ padding-bottom:0px;
     top:0;
     z-index:10000000;
     transition: 0.2s ease-in-out;
+    background-color: rgb(0, 0, 0, .8);
 
 }
 
@@ -79,7 +87,7 @@ position:absolute;
 .landingcontainer {
     position:relative;
     width:100%;
-    height:400px;
+    height:500px;
     display:flex;
     justify-content: center;
     text-align: center;
@@ -88,8 +96,9 @@ position:absolute;
     width:100%;
     position:absolute;
     top:0;
-    height:400px;
+    height:500px;
     z-index: -1;
+    object-fit: cover;
 }
 .landingorange {
     width: 50vw;
@@ -109,18 +118,18 @@ position:absolute;
 }
 .summarycontainer {
     width:100%;
-    height:450px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
 position:relative;
+    background-color: rgb(255, 145, 77, .6);
 }
 .top {
     margin-top:50px;
 }
 .bottom {
-    margin-top:5%;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .summaryheader {
     color:black;
@@ -143,11 +152,21 @@ border-radius:20px;
     margin-left:auto;
     margin-right:auto;
     position:relative;
-
+    margin-bottom: 2rem;
 }
 .summarytext {
     padding:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.summarytext h2 {
+    border-bottom: 2px solid rgb(255, 145, 77, .6);
+    margin-bottom: 2rem;
+}
+
 .summaryimage {
     width:400px;
     padding:30px;
@@ -241,23 +260,36 @@ position:absolute;
     display:flex;
     flex-direction:column;
     text-align: center;
-    margin-left:30px;
-    margin-right:30px;
+    background-color: rgb(var(--blue), .6);
 }
 .photoheader {
-    color:white;
+    /*color:white;
     margin-bottom:30px;
-    margin-top:30px;
+    margin-top:30px;*/
+
+
+    color:black;
+    padding:20px;
+    background-color:white;
+    border:1px solid rgb(92, 225, 230, .9);
+    width:200px;
+
+    text-align: center;
+margin:30px auto;
+border-radius:20px;
 }
 .photocontent {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    overflow:scroll;
-margin-left:30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding-bottom: 2rem;
 }
 .photoimage {
-    margin-left:30px;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 1rem;
 }
 .sponsorcontainer {
 display:flex;
@@ -265,9 +297,10 @@ display:flex;
     text-align: center;
     position:relative;
     margin-bottom:50px;
-    width:80%;
     margin-left:auto;
     margin-right:auto;
+    margin-top: 50px;
+    background-color: rgb(var(--blue), .60);
 }
 .sponsorcontent {
     display:grid;
@@ -279,14 +312,24 @@ display:flex;
     column-gap: 20px;
     row-gap:20px;
     width:100%;
+    padding-bottom: 2rem;
 }
 .sponsorheader {
-    color:white;
-    margin-bottom:30px;
-    margin-top:30px;
+    color:black;
+    padding:20px;
+    background-color:white;
+    border:1px solid rgb(92, 225, 230, .9);
+    width:200px;
+
+    text-align: center;
+margin:30px auto;
+border-radius:20px;
 }
 .sponsorimage {
-height:100%;    height:100px;
+    height:100px;
+    background-color: rgb(var(--white));
+    padding: 0.75rem;
+    border-radius: 5px;
 }
 .sponsorblue {
     z-index:-1;
@@ -312,18 +355,16 @@ footer {
     display:flex;
     justify-content: center;
     text-align: center;
-    background-color: rgb(255, 145, 77, .6);
-
-
+    /*background-color: rgb(255, 145, 77, .6);*/
 }
 .footercontainer {
     margin: auto 0;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgb(255, 145, 77, .6);
-    background-color:rgb(92, 225, 230, .8);
-
+    /*background-color: rgb(255, 145, 77, .6);
+    background-color:rgb(92, 225, 230, .8);*/
+    color: white;
 }
 
 
