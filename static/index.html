@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
 </head>
 <link href="navbar.css" rel="stylesheet" type="text/css">
@@ -12,25 +13,22 @@
 <body>
 
     <nav class="topnav" id="myTopnav">
-        <a href="#home" class="logocontainer"><img class="logo" src="assets/fsae_logo_1-2.png"></a>
+        <a href="index.html" class="logocontainer"><img class="logo" src="assets/fsae_logo_1-2.png"></a>
         <a href="javascript:void(0);" class="icon" id="navbarmenu" onclick="myFunction()">&#9776;</a>
-        <a class="right" href="#news">Contact</a>
-        <a class="right" href="#contact">Team</a>
-
-        <a class="right" href="#about">Sponsors</a>
+        <a class="right" href="contact.html">Contact</a>
+        <a class="right" href="team.html">Team</a>
+        <a class="right" href="sponsors.html">Sponsors</a>
 
     </nav>
 
 <div class="landingcontainer">
 <img class="landingimage" src="assets/car.png">
     <div class="landingorange">
-        <div class="landingwhite">
-            <h2 class="landingtext">Caltech FSAE Racing Team</h2>
-        </div>
+        <h2 class="landingtext">Caltech FSAE Racing Team</h2>
     </div>
 </div>
     <div class="generalsummarycontainer">
-        <div class="summarycontainer top">
+        <!--<div class="summarycontainer top">
             <div class="summaryheader"><h2>Year Review</h2></div>
             <div class="summarycontent">
                 <div class="summarytext">
@@ -42,7 +40,7 @@
             </div>
             <div class="summaryblue"></div>
 
-        </div>
+        </div> -->
 
         <div class="summarywhite"></div>
         <div class="summarycontainer bottom">
@@ -51,8 +49,7 @@
             <div class="summarycontent reverse">
                 <div class="summarytext">
                     <h2>What We're Working On</h2>
-                    <p>This has been a great year with the team! Lorem ipsum loquitor Lorem ipsum loquitorLorem ipsum
-                        loquitor</p>
+                    <p>Now, we are deciding subsystem goals and overall designs. By the end of this summer, we are aiming to complete rough designs for each subsystem so we can begin implementation in the Fall.</p>
                 </div>
                 <img src="assets/Minions_characters.png" class="summaryimage">
             </div>
@@ -61,35 +58,9 @@
         </div>
     </div>
 
-<div class="teamcontainer">
-    <div class="teamheader"><h2>Team Profiles</h2></div>
-    <div class="teamcontent">
-        <div class="teamprofilecard">
-            <h4 class="profilename">Bob</h4>
-            <img class="profileimage" src="assets/bob.jpg">
-            <p class="profiledescription">Lorem ipsum loquitor</p>
-        </div>
-        <div class="teamprofilecard">
-            <h4 class="profilename">Bob</h4>
-            <img class="profileimage" src="assets/bob.jpg">
-            <p class="profiledescription">Lorem ipsum loquitor</p>
-        </div>
-        <div class="teamprofilecard">
-            <h4 class="profilename">Bob</h4>
-            <img class="profileimage" src="assets/bob.jpg">
-            <p class="profiledescription">Lorem ipsum loquitor</p>
-        </div>
-        <div class="viewall"><p>View All >></p></div>
-    </div>
-
-</div>
-
 <div class="photocontainer">
 <div class="photoheader"><h2>Photos</h2></div>
     <div class="photocontent">
-        <img class="photoimage" src="assets/bob.jpg">
-        <img class="photoimage" src="assets/bob.jpg">
-        <img class="photoimage" src="assets/bob.jpg">
         <img class="photoimage" src="assets/bob.jpg">
         <img class="photoimage" src="assets/bob.jpg">
         <img class="photoimage" src="assets/bob.jpg">
@@ -101,19 +72,15 @@
 <div class="sponsorcontainer">
     <div class="sponsorheader"><h2>Sponsors</h2></div>
     <div class="sponsorcontent">
-        <img class="sponsorimage" src="assets/bob.jpg">
-        <img class="sponsorimage" src="assets/bob.jpg">
-        <img class="sponsorimage" src="assets/bob.jpg">
-        <img class="sponsorimage" src="assets/bob.jpg">
-        <img class="sponsorimage" src="assets/bob.jpg">
-        <img class="sponsorimage" src="assets/bob.jpg">
+        <img class="sponsorimage" src="assets/Altium_Logo.svg">
+        <img class="sponsorimage" src="assets/Totten_Tubes.webp">
+        <img class="sponsorimage" src="assets/Dassault.png">
     </div>
     <div class="sponsorblue"></div>
     <div class="sponsororange"></div>
 </div>
     <footer class="footer">
         <div class="footercontainer">
-            <div class="footer-links"><a href="jobs.php">Careers</a> <a href="jobs.php">Careers</a></div>
             <p>&copy; 2023 CaltechFSAE. All rights reserved.</p>
         </div>
     </footer>

@@ -9,6 +9,9 @@ services:
     image: httpd:latest
     networks:
       - proxy
+    ports:
+      - 80:80
+      - 443:443
     volumes:
       - ${PROJECT_PATH}:/usr/local/apache2/htdocs/
     labels:
@@ -16,3 +19,4 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.whoami.entrypoints=websecure"
       - "traefik.http.routers.whoami.tls.certresolver=myresolver"
+    restart: unless-stopped
