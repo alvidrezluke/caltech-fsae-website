@@ -2,9 +2,9 @@
 
 
 .teamheader {
-    margin-left:auto;
-    margin-right:auto;
+    margin:50px auto;
     text-align: center;
+
 }
 .teamcontent {
     border:1px solid black;
@@ -13,6 +13,8 @@
     padding:0;
     text-align: center;
     margin:0;
+    grid-column-gap: 20px;
+    grid-row-gap:50px;
 
 }
 .teamprofilecard {
