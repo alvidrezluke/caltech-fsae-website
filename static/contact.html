@@ -4,7 +4,108 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<link href="navbar.css" rel="stylesheet" type="text/css">
+
+<link href="contact.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <body>
+
+<nav class="topnav" id="myTopnav">
+    <a href="index.html" class="logocontainer"><img class="logo" src="assets/fsae_logo_1-2.png"></a>
+    <a href="javascript:void(0);" class="icon" id="navbarmenu" onclick="myFunction()">&#9776;</a>
+    <a class="right" href="contact.html">Contact</a>
+    <a class="right" href="team.html">Team</a>
+    <a class="right" href="sponsors.html">Sponsors</a>
+
+</nav>
+<form action="../../App/Routes/Handler.php" method="POST">
+
+    <div class="contactcontainer">
+        <div class="subjectcontainer">
+            <div class="subject">
+                Sponsor
+            </div>
+            <div class="subject">
+                Join
+            </div>
+            <div class="subject">
+                Support
+            </div>
+
+            <div class="subject">
+                General
+            </div>
+            <div class="subject">
+                Media
+            </div>
+
+            <div class="subject">
+                URGENT
+            </div>
+            <div class="subject">
+                Other
+            </div>
+
+        </div>
+        <div class="hoteltags">
+
+        </div>
+
+        <div class="bodyform">
+            <input type="hidden" name="subject" id="subjects">
+
+            <input id="email" name="contactemail" type="text" placeholder="email">
+
+            <textarea name="contactbox" placeholder="message" id="body"></textarea>
+            <button class="formsubmit" name="contact" onclick="sendInput()" type="button">Submit!</button>
+        </div>
+    </div>
+</form>
+<script>
+    // get all tags and hide them as inputs
+    const tags = document.querySelectorAll('.subject');
+    const hiddenInput = document.querySelector('#subjects');
+    let selectedValue = '';
+    // make sure user can only select one tag, change input to tag selected
+    // get tags for hotel
+    // remove or add tags based on click event
+
+    tags.forEach(tag => {
+        tag.addEventListener('click', () => {
+            const hoteltagscontainer = document.querySelector('.hoteltags');
+            const hoteltags = document.querySelectorAll('.hoteltag');
+            if (tag.classList.contains('selected')) {
+                tag.classList.remove('selected');
+                hoteltags.forEach(hoteltag => {
+                    if (tag.innerHTML == hoteltag.innerHTML) {
+                        hoteltag.remove();
+                    }
+                });
+            } else {
+                const selectedTags = document.querySelectorAll('.selected');
+                // make sure users can only select 3 tags
+                if (selectedTags.length < 3) {
+                    tag.classList.add('selected');
+                    // real time update of tag selection
+                    var newTag = document.createElement('div');
+                    newTag.className = "hoteltag";
+                    newTag.innerHTML = tag.innerHTML;
+                    hoteltagscontainer.appendChild(newTag);
+                }
+            }
+            // add tags to hidden input (might change to json format instead of string format)
+            const selectedValues = Array.from(document.querySelectorAll('.selected')).map(tag => tag.innerHTML);
+            hiddenInput.value = selectedValues.join(',');
+        });
+    });
+function sendInput() {
+    const subject = hiddenInput.value;
+    const body = document.getElementById("body").value;
+    const email = document.getElementById("email").value;
+    alert(subject + body + email);
+}
+</script>
 
 </body>
 </html>

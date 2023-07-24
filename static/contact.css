@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.subject {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.subjectcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.subject.selected {
+    background-color: orange;
+    color: white;
+}
+
+.contactcontainer {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.subjectcontainer {
+    text-align: center;
+    justify-content: center;
+}
+
+.bodyform {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bodyform textarea {
+    margin-top: 20px;
+    padding: 30px;
+    width: 300px;
+    height: 200px;
+    resize: none;
+}
+
+#email {
+    padding: 5px 10px;
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+
+}
+
+.formsubmit {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+.hoteltags {
+    display:none;
+}
+
+@media screen and (max-width: 1200px) {
+    #contacthtml {
+
+        background-position: 0px 0px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .subjectcontainer {
+        max-width:300px;
+    }
+    .bodyform {
+        max-width:300px;
+    }
+    #email {
+        width:inherit;
+
+    }
+    .contactcontainer {
+        max-width:300px;
+    }
+    .bodyform textarea {
+        max-width:200px;
+    }
+    .formsubmit {
+        max-width:200px;
+    }
+}

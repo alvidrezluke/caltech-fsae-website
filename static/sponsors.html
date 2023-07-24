@@ -4,7 +4,94 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<link href="navbar.css" rel="stylesheet" type="text/css">
 
+<link href="sponsors.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+<nav class="topnav" id="myTopnav">
+    <a href="#home" class="logocontainer"><img class="logo" src="assets/fsae_logo_1-2.png"></a>
+    <a href="javascript:void(0);" class="icon" id="navbarmenu" onclick="myFunction()">&#9776;</a>
+    <a class="right" href="#news">Contact</a>
+    <a class="right" href="#contact">Team</a>
+
+    <a class="right" href="#about">Sponsors</a>
+
+</nav>
+
+<div class="sponsorcontainer">
+    <div class="sponsorheader"><h1>Sponsors</h1></div>
+    <div class="sponsorheader"><h1 class="gold">Gold</h1></div>
+
+    <div class="sponsorcontent">
+        <img class="sponsorimage" src="assets/Altium_Logo.svg">
+        <img class="sponsorimage" src="assets/Totten_Tubes.webp">
+        <img class="sponsorimage" src="assets/Dassault.png">
+        <img class="sponsorimage" src="assets/Altium_Logo.svg">
+        <img class="sponsorimage" src="assets/Totten_Tubes.webp">
+        <img class="sponsorimage" src="assets/Dassault.png">
+    </div>
+    <div class="sponsorblue"></div>
+    <div class="sponsororange"></div>
+</div>
+<div class="sponsorcontainer">
+    <div class="sponsorheader"><h1 class="bronze">Bronze</h1></div>
+
+    <div class="sponsorcontent">
+        <img class="sponsorimage" src="assets/Altium_Logo.svg">
+        <img class="sponsorimage" src="assets/Totten_Tubes.webp">
+        <img class="sponsorimage" src="assets/Dassault.png">
+        <img class="sponsorimage" src="assets/Altium_Logo.svg">
+        <img class="sponsorimage" src="assets/Totten_Tubes.webp">
+        <img class="sponsorimage" src="assets/Dassault.png">
+    </div>
+
+    <div class="sponsorblue"></div>
+</div>
+<div class="sponsorcontainer">
+    <div class="sponsorheader"><h1 class="iron">Iron</h1></div>
+
+    <div class="sponsorcontent">
+        <img class="sponsorimage" src="assets/Altium_Logo.svg">
+        <img class="sponsorimage" src="assets/Totten_Tubes.webp">
+        <img class="sponsorimage" src="assets/Dassault.png">
+        <img class="sponsorimage" src="assets/Altium_Logo.svg">
+        <img class="sponsorimage" src="assets/Totten_Tubes.webp">
+        <img class="sponsorimage" src="assets/Dassault.png">
+    </div>
+
+    <div class="sponsororange"></div>
+</div>
+<footer class="footer">
+    <div class="footercontainer">
+        <div class="footer-links"><a href="jobs.php">Careers</a> <a href="jobs.php">Careers</a></div>
+        <p>&copy; 2023 CaltechFSAE. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav nav-active" || x.className === "topnav") {
+            x.className += " responsive";
+            document.getElementById("navbarmenu").innerHTML = '&#x2715';
+
+        } else {
+            x.className = "topnav";
+            document.getElementById("navbarmenu").innerHTML = '&#9776';
+
+        }
+    }
+    const navbar = document.getElementById('myTopnav');
+    window.onscroll = () => {
+        if (window.scrollY > 300) {
+            navbar.classList.add('nav-active');
+        } else {
+            navbar.classList.remove('nav-active');
+        }
+    };
+</script>
 </body>
 </html>
