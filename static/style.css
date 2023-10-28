@@ -14,6 +14,7 @@
     top:0;
     z-index: -1;
     object-fit: cover;
+    height: 580px;
 }
 .landingorange {
     width: 50vw;
@@ -58,14 +59,16 @@ position:relative;
 }
 .summarycontent {
     background-color: rgb(255,255,255, .8);
-    width:70%;
-    height:350px;
+    /* width:70%; */
+    /* height:350px; */
     display:flex;
     flex-direction:row;
     margin-left:auto;
     margin-right:auto;
     position:relative;
     margin-bottom: 2rem;
+    max-width: 100vw;
+    padding: 5%
 }
 .summarytext {
     padding:30px;
@@ -73,6 +76,7 @@ position:relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .summarytext h2 {
@@ -83,6 +87,7 @@ position:relative;
 .summaryimage {
     width:400px;
     padding:30px;
+    max-width: 40%;
 }
 .generalsummarycontainer {
     position:relative;
@@ -219,15 +224,12 @@ position:absolute;
     background-color: rgb(var(--blue), .60);
 }
 .sponsorcontent {
-    display:grid;
-    grid-template-columns: auto auto auto;
+    /* display: flex; */
     margin-left:auto;
     margin-right:auto;
     text-align: center;
     justify-content: center;
-    column-gap: 20px;
-    row-gap:20px;
-    width:100%;
+    /* width:100%; */
     padding-bottom: 2rem;
 }
 .sponsorheader {
