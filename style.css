@@ -227,6 +227,13 @@ position:absolute;
     /* width: 50%; */
     /* border-radius: 1rem; */
 }
+.instagram-container {
+    align-self: center;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .sponsorcontainer {
     display:flex;
     flex-direction: column;
