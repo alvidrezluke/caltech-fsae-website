@@ -37,6 +37,7 @@
 }
 .summarycontainer {
     width:100%;
+    min-height: 350px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -256,7 +257,6 @@ position:absolute;
     color:black;
     padding:20px;
     background-color:white;
-    grid-column: 1 / span 3;
     border:1px solid rgb(92, 225, 230, .9);
     width:200px;
     text-align: center;
