@@ -37,6 +37,7 @@
 }
 .summarycontainer {
     width:100%;
+    min-height: 350px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -226,6 +227,13 @@ position:absolute;
     /* width: 50%; */
     /* border-radius: 1rem; */
 }
+.instagram-container {
+    align-self: center;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .sponsorcontainer {
     display:flex;
     flex-direction: column;
@@ -256,7 +264,6 @@ position:absolute;
     color:black;
     padding:20px;
     background-color:white;
-    grid-column: 1 / span 3;
     border:1px solid rgb(92, 225, 230, .9);
     width:200px;
     text-align: center;
