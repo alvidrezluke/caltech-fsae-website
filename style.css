@@ -59,13 +59,12 @@ position:relative;
 .summarycontent {
     background-color: rgb(255,255,255, .8);
     width:70%;
-    height:350px;
+    min-height:350px;
     display:flex;
     flex-direction:row;
     margin-left:auto;
     margin-right:auto;
     position:relative;
-    margin-bottom: 2rem;
 }
 .summarytext {
     padding:30px;
@@ -176,6 +175,8 @@ position:absolute;
     padding-bottom: 30px;
     /* background-color: rgb(var(--blue), .6); */
     background-color: #FF6C0C;
+    align-items: center;
+    justify-content: center;
 }
 .photoheader {
     /*color:white;
@@ -215,6 +216,8 @@ position:absolute;
     margin-bottom:50px;
     margin-left:auto;
     margin-right:auto;
+    align-items: center;
+    justify-content: center;
     /* margin-top: 50px; */
     background-color: rgb(var(--blue), .60);
 }
@@ -236,10 +239,9 @@ position:absolute;
     background-color:white;
     border:1px solid rgb(92, 225, 230, .9);
     width:200px;
-
     text-align: center;
-margin:30px auto;
-border-radius:20px;
+    margin:30px auto;
+    border-radius:20px;
 }
 .sponsorimage {
     height:100px;
@@ -270,14 +272,16 @@ border-radius:20px;
     margin: 30px;
     padding: 10px;
     font-size: 1.2em;
-    border: orange 1px solid;
+    background-color: white;
+    width: fit-content;
+    border: transparent 8px solid;
     border-radius: 4px;
     transition: all;
     transition-duration: 500ms;
 }
 
 .defaultbutton:hover {
-    background-color: orange;
+    border: orange 8px solid;
     cursor: pointer;
 }
 
