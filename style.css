@@ -190,6 +190,7 @@ position:absolute;
     flex-direction:column;
     text-align: center;
     padding-bottom: 30px;
+    align-items: center;
     /* background-color: rgb(var(--blue), .6); */
     background-color: #FF6C0C;
     align-items: center;
@@ -255,6 +256,7 @@ position:absolute;
     color:black;
     padding:20px;
     background-color:white;
+    grid-column: 1 / span 3;
     border:1px solid rgb(92, 225, 230, .9);
     width:200px;
     text-align: center;
